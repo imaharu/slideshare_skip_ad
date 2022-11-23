@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slideshare_skip_ad/slideshare"
+)
 
 func main() {
-	fmt.Println("Hello")
+	resp := slideshare.GetSlideShareLink("https://www.slideshare.net/maruyama097/twitter-49709690")
+	fmt.Println(resp)
 }
